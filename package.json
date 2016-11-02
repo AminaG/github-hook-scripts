@@ -1,6 +1,6 @@
 {
   "name": "github-hook-scripts",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "index-es5.js",
   "repository": {
     "url": "https://github.com/AminaG/github-hook-scripts",
