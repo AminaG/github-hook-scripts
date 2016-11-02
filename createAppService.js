@@ -81,11 +81,11 @@ function runCommand(user,repo_name,branch,command){
 		pre='#!/bin/sh\n'
 		ext='.sh'
 	}
-	const file=__dirname + '/' + pre + repo_name + '-' + branch + ext
+	const file=__dirname + '/' + repo_name + '-' + branch + ext
 
-	console.log('Writing temp file:%s',file)
+	console.log('Writing temp file:%s',file,{mode:777})
 	
-	require('fs').writeFileSync(file,command)		
+	require('fs').writeFileSync(file,pre + command,{mode:777})		
 	var x=require('child_process').exec( file,function(err,response){
 		require('fs').unlink(file)		
 		if(err){
