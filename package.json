@@ -1,0 +1,42 @@
+{
+  "name": "github-hook-scripts",
+  "version": "1.1.0",
+  "main": "index-es5.js",
+  "repository": {
+    "url": "https://github.com/AminaG/github-hook-scripts",
+    "type": "git"
+  },
+  "author": "AGLaptop <aLaptop@bubbles.co.il>",
+  "license": "MIT",
+  "babel": {
+    "plugins": [
+      "transform-es2015-destructuring",
+      "babel-plugin-transform-function-bind",
+      "babel-plugin-transform-es2015-parameters"
+    ],
+    "presets": [
+      "es2017"
+    ]
+  },
+  "dependencies": {
+    "babel-plugin-syntax-function-bind": "^6.13.0",
+    "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.18.0",
+    "babel-plugin-transform-es2015-parameters": "^6.18.0",
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-2017": "^0.0.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "js-yaml": "^3.6.1",
+    "lodash": "^4.16.6",
+    "request": "^2.76.0",
+    "supertest": "^2.0.1",
+    "supertest-as-promised": "^4.0.1"
+  }
+}
