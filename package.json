@@ -6,6 +6,10 @@
     "url": "https://github.com/AminaG/github-hook-scripts",
     "type": "git"
   },
+  "scripts":{
+    "test":"curl http://127.0.0.1:80 -XPOST -d@example1.json -Hcontent-type:application/json",
+    "start":"node index-es5.js"
+  },
   "author": "AGLaptop <aLaptop@bubbles.co.il>",
   "license": "MIT",
   "babel": {
